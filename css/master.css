@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.plan{
+    background-color: tomato;
+    width: 100%;
+    height: 100vh;
+}
+.plan .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+}
+.plan-content{
+    border-radius: 5px;
+    background-color: #fff;
+    width: 365px;
+    min-height: 300px;
+    padding: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.plan-content span{
+    color: tomato;
+    font-size: 60px;
+}
+.plan-content h2{
+    margin: 20px 0 20px 0; 
+}
+.plan-content .btn{
+    background-color: tomato;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 30px;
+    margin-top: 10px;
+    transition: 0.7s ease;
+}
+.plan-content .btn:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.ribbon-wrap{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.ribbon-wrap::before, .ribbon-wrap::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    position: absolute;
+    z-index: -1;
+}
+.ribbon-wrap::before{
+    top: 0;
+    right: 0;
+}
+.ribbon-wrap::after{
+    bottom: 0;
+    left: 0;
+}
+.ribbon{
+    width: 225px;
+    font-size: 15px;
+    text-align: center;
+    padding: 8px 0;
+    background-color: blue;
+    color: #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    top: 23%;
+    right: -24%;
+}
